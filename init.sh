@@ -11,5 +11,5 @@ ui = true
 EOF
 
 cat /vault/config/vault.hcl
-
+env
 vault server -config /vault/config/vault.hcl

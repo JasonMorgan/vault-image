@@ -10,4 +10,6 @@ storage "s3" {
 ui = true
 EOF
 
+cat /vault/config/vault.hcl
+
 vault server -config /vault/config/vault.hcl

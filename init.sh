@@ -8,7 +8,10 @@ storage "file" {
   path = "/vault/data"
 }
 
+diable_mlock = true
+
 ui = true
+
 EOF
 
 cat /vault/config/vault.hcl

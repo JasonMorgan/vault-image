@@ -1,12 +1,4 @@
 ---
-resource_types:
-
-- name: harbor-image
-  privileged: true
-  type: docker-image
-  source:
-    repository: virtmerlin/harbor-image-resource
-
 resources: # This is where we define the resources are pipeline will work with. By resources we mean concourse resources specifically, a pipeline can still use tasks which are essentially arbitrary code that will run as scripts in containers during the build.  Tasks will live in the ci/tasks directory by convention.
 - name: source # Here we're pulling a git repo as well as naming the folder the repo will live in for the duration of the pipeline.  It's worth remembering that the name of this resource will be the name of the folder when you go to access files.
   type: git

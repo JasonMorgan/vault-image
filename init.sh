@@ -13,6 +13,11 @@ listener "tcp" {
 #   path = "/vault/data"
 # }
 
+ha_storage "consul" {
+  address = "kv-consul.tools.svc.cluster.local:8500"
+  path    = "vault"
+}
+
 storage "s3" {
   access_key = $AWS_ACCESS_KEY_ID
   secret_key = $AWS_SECRET_ACCESS_KEY

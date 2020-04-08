@@ -14,7 +14,7 @@ listener "tcp" {
 # }
 
 ha_storage "consul" {
-  address = "kv-consul.tools.svc.cluster.local:8500"
+  address = "$CONSUL_URL"
   path    = "vault"
 }
 
